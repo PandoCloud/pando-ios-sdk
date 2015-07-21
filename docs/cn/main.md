@@ -14,7 +14,11 @@ pando手机sdk是pandocloud物联网云平台针对手机终端提供的物联�
 ### 准备工作
 sdk使用步骤如下：
 
-下载最新的sdk的framework文件，将其拖入工程目录，并在 “Targets->General->Embedded Binaries” 中添加。
+1.下载最新的sdk的framework文件，将其拖入工程目录，并在 “Targets->General->Embedded Binaries” 中添加;
+2.在需要使用sdk的代码中引入头文件即可。
+``` objc
+#include <PandoSdk/PandoSdk.h>
+```
 
 
 ### wifi设备配置
@@ -99,10 +103,6 @@ app调用PandoSdk的configDeviceToWiFi方法启动配置：
 */
 - (void)pandoSdk:(PandoSdk *)pandoSdk didStopConfig:(BOOL)isStoped error:(NSError *)error;
 ```
-
-###### 4. 示例代码
-
-https://github.com/PandoCloud/freeiot-android/tree/master/app/src/main/java/com/pandocloud/freeiot/ui/device/config
 
 ### 工具方法
 TODO
