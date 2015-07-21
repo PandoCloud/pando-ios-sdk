@@ -14,7 +14,7 @@ pando手机sdk是pandocloud物联网云平台针对手机终端提供的物联�
 ### 准备工作
 sdk使用步骤如下：
 
-1.下载最新的sdk的framework文件，将其拖入工程目录，并在 “Targets->General->Embedded Binaries” 中添加;        
+1.下载最新的sdk的framework文件，将其拖入工程目录，并在 “Targets->General->Embedded Binaries” 中添加;其中PandoSdk.framework用于真机环境和提交到app store，PandoSdk_simulator.framework用于模拟器环境;      
 2.在需要使用sdk的代码中引入头文件即可。
 ``` objc
 #include <PandoSdk/PandoSdk.h>
