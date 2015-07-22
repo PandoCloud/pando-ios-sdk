@@ -39,16 +39,6 @@
  */
 - (void)stopConfig;
 
-
-/*!
- *  @method isDebugOn:
- *
- *  @param  isDebugOn   Set YES to print debug info.
- *
- *  @discussion     Set YES to print debug info.
- */
-- (void)isDebugOn:(BOOL)isDebugOn;
-
 @end
 
 

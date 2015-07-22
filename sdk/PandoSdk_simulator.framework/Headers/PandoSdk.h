@@ -5,6 +5,7 @@
 //  Created by liming_llm on 15/3/26.
 //  Copyright (c) 2015年 liming_llm. All rights reserved.
 //
+#import <UIKit/UIKit.h>
 
 @protocol  PandoSdkDelegate;
 
@@ -37,6 +38,16 @@
  *  @discussion     Stop to configure device while configuring.
  */
 - (void)stopConfig;
+
+
+/*!
+ *  @method isDebugOn:
+ *
+ *  @param  isDebugOn   Set YES to print debug info.
+ *
+ *  @discussion     Set YES to print debug info.
+ */
+- (void)isDebugOn:(BOOL)isDebugOn;
 
 @end
 
