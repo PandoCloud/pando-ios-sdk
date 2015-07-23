@@ -104,5 +104,9 @@ app调用PandoSdk的configDeviceToWiFi方法启动配置：
 - (void)pandoSdk:(PandoSdk *)pandoSdk didStopConfig:(BOOL)isStoped error:(NSError *)error;
 ```
 
+###### 4. 示例代码
+该示例用于展示如何使用PandoSdk配置设备联网
+https://github.com/PandoCloud/pando-ios-sdk/tree/master/example/
+
 ### 工具方法
 TODO
