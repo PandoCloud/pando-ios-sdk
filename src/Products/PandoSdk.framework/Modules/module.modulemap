@@ -1,0 +1,6 @@
+framework module PandoSdk {
+  umbrella header "PandoSdk.h"
+
+  export *
+  module * { export * }
+}

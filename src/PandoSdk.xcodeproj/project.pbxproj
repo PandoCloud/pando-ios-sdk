@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		489953BC1B11D1FC00B5A5DA /* framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 489953BD1B11D1FC00B5A5DA /* Build configuration list for PBXAggregateTarget "framework" */;
+			buildPhases = (
+				489953C21B11D27300B5A5DA /* ShellScript */,
+			);
+			dependencies = (
+				489953C11B11D21300B5A5DA /* PBXTargetDependency */,
+			);
+			name = framework;
+			productName = framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		483731361B3BEA5900AD5B5A /* ESP_ByteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4837311C1B3BEA5900AD5B5A /* ESP_ByteUtil.h */; };
+		483731371B3BEA5900AD5B5A /* ESP_ByteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837311D1B3BEA5900AD5B5A /* ESP_ByteUtil.m */; };
+		483731381B3BEA5900AD5B5A /* ESP_CRC8.h in Headers */ = {isa = PBXBuildFile; fileRef = 4837311E1B3BEA5900AD5B5A /* ESP_CRC8.h */; };
+		483731391B3BEA5900AD5B5A /* ESP_CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837311F1B3BEA5900AD5B5A /* ESP_CRC8.m */; };
+		4837313A1B3BEA5900AD5B5A /* ESP_NetUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731201B3BEA5900AD5B5A /* ESP_NetUtil.h */; };
+		4837313B1B3BEA5900AD5B5A /* ESP_NetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731211B3BEA5900AD5B5A /* ESP_NetUtil.m */; };
+		4837313C1B3BEA5900AD5B5A /* ESPDataCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731221B3BEA5900AD5B5A /* ESPDataCode.h */; };
+		4837313D1B3BEA5900AD5B5A /* ESPDataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731231B3BEA5900AD5B5A /* ESPDataCode.m */; };
+		4837313E1B3BEA5900AD5B5A /* ESPDatumCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731241B3BEA5900AD5B5A /* ESPDatumCode.h */; };
+		4837313F1B3BEA5900AD5B5A /* ESPDatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731251B3BEA5900AD5B5A /* ESPDatumCode.m */; };
+		483731401B3BEA5900AD5B5A /* ESPGuideCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731261B3BEA5900AD5B5A /* ESPGuideCode.h */; };
+		483731411B3BEA5900AD5B5A /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731271B3BEA5900AD5B5A /* ESPGuideCode.m */; };
+		483731421B3BEA5900AD5B5A /* ESPTouchGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731281B3BEA5900AD5B5A /* ESPTouchGenerator.h */; };
+		483731431B3BEA5900AD5B5A /* ESPTouchGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731291B3BEA5900AD5B5A /* ESPTouchGenerator.m */; };
+		483731441B3BEA5900AD5B5A /* ESPTouchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4837312A1B3BEA5900AD5B5A /* ESPTouchResult.h */; };
+		483731451B3BEA5900AD5B5A /* ESPTouchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837312B1B3BEA5900AD5B5A /* ESPTouchResult.m */; };
+		483731461B3BEA5900AD5B5A /* ESPTouchTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 4837312C1B3BEA5900AD5B5A /* ESPTouchTask.h */; };
+		483731471B3BEA5900AD5B5A /* ESPTouchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837312D1B3BEA5900AD5B5A /* ESPTouchTask.m */; };
+		483731481B3BEA5900AD5B5A /* ESPTouchTaskParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4837312E1B3BEA5900AD5B5A /* ESPTouchTaskParameter.h */; };
+		483731491B3BEA5900AD5B5A /* ESPTouchTaskParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4837312F1B3BEA5900AD5B5A /* ESPTouchTaskParameter.m */; };
+		4837314A1B3BEA5900AD5B5A /* ESPUDPSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731301B3BEA5900AD5B5A /* ESPUDPSocketClient.h */; };
+		4837314B1B3BEA5900AD5B5A /* ESPUDPSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731311B3BEA5900AD5B5A /* ESPUDPSocketClient.m */; };
+		4837314C1B3BEA5900AD5B5A /* ESPUDPSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731321B3BEA5900AD5B5A /* ESPUDPSocketServer.h */; };
+		4837314D1B3BEA5900AD5B5A /* ESPUDPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 483731331B3BEA5900AD5B5A /* ESPUDPSocketServer.m */; };
+		4837314E1B3BEA5900AD5B5A /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 483731341B3BEA5900AD5B5A /* IPAddress.c */; };
+		4837314F1B3BEA5900AD5B5A /* IPAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 483731351B3BEA5900AD5B5A /* IPAddress.h */; };
+		487E0E501AC958EA0075BBF6 /* PandoSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E0E4F1AC958EA0075BBF6 /* PandoSdk.m */; };
+		489953B81B119DB500B5A5DA /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 489953B41B119DB500B5A5DA /* GCDAsyncSocket.h */; };
+		489953B91B119DB500B5A5DA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 489953B51B119DB500B5A5DA /* GCDAsyncSocket.m */; };
+		489953BA1B119DB500B5A5DA /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 489953B61B119DB500B5A5DA /* GCDAsyncUdpSocket.h */; };
+		489953BB1B119DB500B5A5DA /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 489953B71B119DB500B5A5DA /* GCDAsyncUdpSocket.m */; };
+		48BDA3521AC3B4E8006A054D /* PandoSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDA3511AC3B4E8006A054D /* PandoSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D9AF551B904DC6002B2CB3 /* pando_endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF481B904DC6002B2CB3 /* pando_endian.c */; };
+		48D9AF561B904DC6002B2CB3 /* pando_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF491B904DC6002B2CB3 /* pando_endian.h */; };
+		48D9AF571B904DC6002B2CB3 /* pando_protocol_tool.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF4A1B904DC6002B2CB3 /* pando_protocol_tool.c */; };
+		48D9AF581B904DC6002B2CB3 /* pando_protocol_tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF4B1B904DC6002B2CB3 /* pando_protocol_tool.h */; };
+		48D9AF591B904DC6002B2CB3 /* pd_machine.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF4C1B904DC6002B2CB3 /* pd_machine.c */; };
+		48D9AF5A1B904DC6002B2CB3 /* pd_machine.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF4D1B904DC6002B2CB3 /* pd_machine.h */; };
+		48D9AF5B1B904DC6002B2CB3 /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF4E1B904DC6002B2CB3 /* platform.c */; };
+		48D9AF5C1B904DC6002B2CB3 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF4F1B904DC6002B2CB3 /* platform.h */; };
+		48D9AF5D1B904DC6002B2CB3 /* platform_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF501B904DC6002B2CB3 /* platform_functions.c */; };
+		48D9AF5E1B904DC6002B2CB3 /* platform_functions.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF511B904DC6002B2CB3 /* platform_functions.h */; };
+		48D9AF5F1B904DC6002B2CB3 /* sub_device_protocol_tool.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF521B904DC6002B2CB3 /* sub_device_protocol_tool.c */; };
+		48D9AF601B904DC6002B2CB3 /* sub_device_protocol_tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF531B904DC6002B2CB3 /* sub_device_protocol_tool.h */; };
+		48D9AF631B9C0E7C002B2CB3 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF621B9C0E7C002B2CB3 /* HttpClient.m */; };
+		48D9AF681B9C1E72002B2CB3 /* CHKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9AF661B9C1E72002B2CB3 /* CHKeychain.h */; };
+		48D9AF691B9C1E72002B2CB3 /* CHKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D9AF671B9C1E72002B2CB3 /* CHKeychain.m */; };
+		48E8468F1B7B2870000828FA /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8468D1B7B2870000828FA /* MQTTKit.h */; };
+		48E846901B7B2870000828FA /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E8468E1B7B2870000828FA /* MQTTKit.m */; };
+		48E846B01B7B2881000828FA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846921B7B2881000828FA /* config.h */; };
+		48E846B11B7B2881000828FA /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846931B7B2881000828FA /* dummypthread.h */; };
+		48E846B21B7B2881000828FA /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846941B7B2881000828FA /* logging_mosq.c */; };
+		48E846B31B7B2881000828FA /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846951B7B2881000828FA /* logging_mosq.h */; };
+		48E846B41B7B2881000828FA /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846961B7B2881000828FA /* memory_mosq.c */; };
+		48E846B51B7B2881000828FA /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846971B7B2881000828FA /* memory_mosq.h */; };
+		48E846B61B7B2881000828FA /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846981B7B2881000828FA /* messages_mosq.c */; };
+		48E846B71B7B2881000828FA /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846991B7B2881000828FA /* messages_mosq.h */; };
+		48E846B81B7B2881000828FA /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E8469A1B7B2881000828FA /* mosquitto.c */; };
+		48E846B91B7B2881000828FA /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8469B1B7B2881000828FA /* mosquitto.h */; };
+		48E846BA1B7B2881000828FA /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8469C1B7B2881000828FA /* mosquitto_internal.h */; };
+		48E846BB1B7B2881000828FA /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8469D1B7B2881000828FA /* mqtt3_protocol.h */; };
+		48E846BC1B7B2881000828FA /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E8469E1B7B2881000828FA /* net_mosq.c */; };
+		48E846BD1B7B2881000828FA /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8469F1B7B2881000828FA /* net_mosq.h */; };
+		48E846BE1B7B2881000828FA /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A01B7B2881000828FA /* read_handle.c */; };
+		48E846BF1B7B2881000828FA /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846A11B7B2881000828FA /* read_handle.h */; };
+		48E846C01B7B2881000828FA /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A21B7B2881000828FA /* read_handle_client.c */; };
+		48E846C11B7B2881000828FA /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A31B7B2881000828FA /* read_handle_shared.c */; };
+		48E846C21B7B2881000828FA /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A41B7B2881000828FA /* send_client_mosq.c */; };
+		48E846C31B7B2881000828FA /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A51B7B2881000828FA /* send_mosq.c */; };
+		48E846C41B7B2881000828FA /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846A61B7B2881000828FA /* send_mosq.h */; };
+		48E846C51B7B2881000828FA /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A71B7B2881000828FA /* thread_mosq.c */; };
+		48E846C61B7B2881000828FA /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846A81B7B2881000828FA /* time_mosq.c */; };
+		48E846C71B7B2881000828FA /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846A91B7B2881000828FA /* time_mosq.h */; };
+		48E846C81B7B2881000828FA /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846AA1B7B2881000828FA /* tls_mosq.c */; };
+		48E846C91B7B2881000828FA /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846AB1B7B2881000828FA /* tls_mosq.h */; };
+		48E846CA1B7B2881000828FA /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846AC1B7B2881000828FA /* util_mosq.c */; };
+		48E846CB1B7B2881000828FA /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846AD1B7B2881000828FA /* util_mosq.h */; };
+		48E846CC1B7B2881000828FA /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 48E846AE1B7B2881000828FA /* will_mosq.c */; };
+		48E846CD1B7B2881000828FA /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E846AF1B7B2881000828FA /* will_mosq.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		489953C01B11D21300B5A5DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48BDA3431AC3B4E8006A054D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48BDA34B1AC3B4E8006A054D;
+			remoteInfo = PandoSdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4837311C1B3BEA5900AD5B5A /* ESP_ByteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_ByteUtil.h; sourceTree = "<group>"; };
+		4837311D1B3BEA5900AD5B5A /* ESP_ByteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_ByteUtil.m; sourceTree = "<group>"; };
+		4837311E1B3BEA5900AD5B5A /* ESP_CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_CRC8.h; sourceTree = "<group>"; };
+		4837311F1B3BEA5900AD5B5A /* ESP_CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_CRC8.m; sourceTree = "<group>"; };
+		483731201B3BEA5900AD5B5A /* ESP_NetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_NetUtil.h; sourceTree = "<group>"; };
+		483731211B3BEA5900AD5B5A /* ESP_NetUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_NetUtil.m; sourceTree = "<group>"; };
+		483731221B3BEA5900AD5B5A /* ESPDataCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDataCode.h; sourceTree = "<group>"; };
+		483731231B3BEA5900AD5B5A /* ESPDataCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDataCode.m; sourceTree = "<group>"; };
+		483731241B3BEA5900AD5B5A /* ESPDatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDatumCode.h; sourceTree = "<group>"; };
+		483731251B3BEA5900AD5B5A /* ESPDatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDatumCode.m; sourceTree = "<group>"; };
+		483731261B3BEA5900AD5B5A /* ESPGuideCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPGuideCode.h; sourceTree = "<group>"; };
+		483731271B3BEA5900AD5B5A /* ESPGuideCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPGuideCode.m; sourceTree = "<group>"; };
+		483731281B3BEA5900AD5B5A /* ESPTouchGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchGenerator.h; sourceTree = "<group>"; };
+		483731291B3BEA5900AD5B5A /* ESPTouchGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchGenerator.m; sourceTree = "<group>"; };
+		4837312A1B3BEA5900AD5B5A /* ESPTouchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchResult.h; sourceTree = "<group>"; };
+		4837312B1B3BEA5900AD5B5A /* ESPTouchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchResult.m; sourceTree = "<group>"; };
+		4837312C1B3BEA5900AD5B5A /* ESPTouchTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTask.h; sourceTree = "<group>"; };
+		4837312D1B3BEA5900AD5B5A /* ESPTouchTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTask.m; sourceTree = "<group>"; };
+		4837312E1B3BEA5900AD5B5A /* ESPTouchTaskParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTaskParameter.h; sourceTree = "<group>"; };
+		4837312F1B3BEA5900AD5B5A /* ESPTouchTaskParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTaskParameter.m; sourceTree = "<group>"; };
+		483731301B3BEA5900AD5B5A /* ESPUDPSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketClient.h; sourceTree = "<group>"; };
+		483731311B3BEA5900AD5B5A /* ESPUDPSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketClient.m; sourceTree = "<group>"; };
+		483731321B3BEA5900AD5B5A /* ESPUDPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketServer.h; sourceTree = "<group>"; };
+		483731331B3BEA5900AD5B5A /* ESPUDPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketServer.m; sourceTree = "<group>"; };
+		483731341B3BEA5900AD5B5A /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
+		483731351B3BEA5900AD5B5A /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		487E0E4F1AC958EA0075BBF6 /* PandoSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PandoSdk.m; sourceTree = "<group>"; };
+		489953B41B119DB500B5A5DA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		489953B51B119DB500B5A5DA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		489953B61B119DB500B5A5DA /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		489953B71B119DB500B5A5DA /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		48BDA34C1AC3B4E8006A054D /* PandoSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PandoSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48BDA3501AC3B4E8006A054D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48BDA3511AC3B4E8006A054D /* PandoSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandoSdk.h; sourceTree = "<group>"; };
+		48D9AF481B904DC6002B2CB3 /* pando_endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pando_endian.c; sourceTree = "<group>"; };
+		48D9AF491B904DC6002B2CB3 /* pando_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pando_endian.h; sourceTree = "<group>"; };
+		48D9AF4A1B904DC6002B2CB3 /* pando_protocol_tool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pando_protocol_tool.c; sourceTree = "<group>"; };
+		48D9AF4B1B904DC6002B2CB3 /* pando_protocol_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pando_protocol_tool.h; sourceTree = "<group>"; };
+		48D9AF4C1B904DC6002B2CB3 /* pd_machine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pd_machine.c; sourceTree = "<group>"; };
+		48D9AF4D1B904DC6002B2CB3 /* pd_machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pd_machine.h; sourceTree = "<group>"; };
+		48D9AF4E1B904DC6002B2CB3 /* platform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform.c; sourceTree = "<group>"; };
+		48D9AF4F1B904DC6002B2CB3 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		48D9AF501B904DC6002B2CB3 /* platform_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform_functions.c; sourceTree = "<group>"; };
+		48D9AF511B904DC6002B2CB3 /* platform_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_functions.h; sourceTree = "<group>"; };
+		48D9AF521B904DC6002B2CB3 /* sub_device_protocol_tool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sub_device_protocol_tool.c; sourceTree = "<group>"; };
+		48D9AF531B904DC6002B2CB3 /* sub_device_protocol_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sub_device_protocol_tool.h; sourceTree = "<group>"; };
+		48D9AF621B9C0E7C002B2CB3 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpClient.m; path = HttpClient/HttpClient.m; sourceTree = "<group>"; };
+		48D9AF641B9C109F002B2CB3 /* HttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HttpClient.h; path = HttpClient/HttpClient.h; sourceTree = "<group>"; };
+		48D9AF661B9C1E72002B2CB3 /* CHKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHKeychain.h; sourceTree = "<group>"; };
+		48D9AF671B9C1E72002B2CB3 /* CHKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHKeychain.m; sourceTree = "<group>"; };
+		48E8468D1B7B2870000828FA /* MQTTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTKit.h; sourceTree = "<group>"; };
+		48E8468E1B7B2870000828FA /* MQTTKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTKit.m; sourceTree = "<group>"; };
+		48E846921B7B2881000828FA /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		48E846931B7B2881000828FA /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
+		48E846941B7B2881000828FA /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
+		48E846951B7B2881000828FA /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging_mosq.h; sourceTree = "<group>"; };
+		48E846961B7B2881000828FA /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_mosq.c; sourceTree = "<group>"; };
+		48E846971B7B2881000828FA /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_mosq.h; sourceTree = "<group>"; };
+		48E846981B7B2881000828FA /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = messages_mosq.c; sourceTree = "<group>"; };
+		48E846991B7B2881000828FA /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messages_mosq.h; sourceTree = "<group>"; };
+		48E8469A1B7B2881000828FA /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mosquitto.c; sourceTree = "<group>"; };
+		48E8469B1B7B2881000828FA /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto.h; sourceTree = "<group>"; };
+		48E8469C1B7B2881000828FA /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto_internal.h; sourceTree = "<group>"; };
+		48E8469D1B7B2881000828FA /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt3_protocol.h; sourceTree = "<group>"; };
+		48E8469E1B7B2881000828FA /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_mosq.c; sourceTree = "<group>"; };
+		48E8469F1B7B2881000828FA /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_mosq.h; sourceTree = "<group>"; };
+		48E846A01B7B2881000828FA /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle.c; sourceTree = "<group>"; };
+		48E846A11B7B2881000828FA /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_handle.h; sourceTree = "<group>"; };
+		48E846A21B7B2881000828FA /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_client.c; sourceTree = "<group>"; };
+		48E846A31B7B2881000828FA /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_shared.c; sourceTree = "<group>"; };
+		48E846A41B7B2881000828FA /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_client_mosq.c; sourceTree = "<group>"; };
+		48E846A51B7B2881000828FA /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_mosq.c; sourceTree = "<group>"; };
+		48E846A61B7B2881000828FA /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_mosq.h; sourceTree = "<group>"; };
+		48E846A71B7B2881000828FA /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mosq.c; sourceTree = "<group>"; };
+		48E846A81B7B2881000828FA /* time_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time_mosq.c; sourceTree = "<group>"; };
+		48E846A91B7B2881000828FA /* time_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_mosq.h; sourceTree = "<group>"; };
+		48E846AA1B7B2881000828FA /* tls_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_mosq.c; sourceTree = "<group>"; };
+		48E846AB1B7B2881000828FA /* tls_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls_mosq.h; sourceTree = "<group>"; };
+		48E846AC1B7B2881000828FA /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util_mosq.c; sourceTree = "<group>"; };
+		48E846AD1B7B2881000828FA /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_mosq.h; sourceTree = "<group>"; };
+		48E846AE1B7B2881000828FA /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = will_mosq.c; sourceTree = "<group>"; };
+		48E846AF1B7B2881000828FA /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48BDA3481AC3B4E8006A054D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4837311B1B3BEA5900AD5B5A /* esptouch */ = {
+			isa = PBXGroup;
+			children = (
+				4837311C1B3BEA5900AD5B5A /* ESP_ByteUtil.h */,
+				4837311D1B3BEA5900AD5B5A /* ESP_ByteUtil.m */,
+				4837311E1B3BEA5900AD5B5A /* ESP_CRC8.h */,
+				4837311F1B3BEA5900AD5B5A /* ESP_CRC8.m */,
+				483731201B3BEA5900AD5B5A /* ESP_NetUtil.h */,
+				483731211B3BEA5900AD5B5A /* ESP_NetUtil.m */,
+				483731221B3BEA5900AD5B5A /* ESPDataCode.h */,
+				483731231B3BEA5900AD5B5A /* ESPDataCode.m */,
+				483731241B3BEA5900AD5B5A /* ESPDatumCode.h */,
+				483731251B3BEA5900AD5B5A /* ESPDatumCode.m */,
+				483731261B3BEA5900AD5B5A /* ESPGuideCode.h */,
+				483731271B3BEA5900AD5B5A /* ESPGuideCode.m */,
+				483731281B3BEA5900AD5B5A /* ESPTouchGenerator.h */,
+				483731291B3BEA5900AD5B5A /* ESPTouchGenerator.m */,
+				4837312A1B3BEA5900AD5B5A /* ESPTouchResult.h */,
+				4837312B1B3BEA5900AD5B5A /* ESPTouchResult.m */,
+				4837312C1B3BEA5900AD5B5A /* ESPTouchTask.h */,
+				4837312D1B3BEA5900AD5B5A /* ESPTouchTask.m */,
+				4837312E1B3BEA5900AD5B5A /* ESPTouchTaskParameter.h */,
+				4837312F1B3BEA5900AD5B5A /* ESPTouchTaskParameter.m */,
+				483731301B3BEA5900AD5B5A /* ESPUDPSocketClient.h */,
+				483731311B3BEA5900AD5B5A /* ESPUDPSocketClient.m */,
+				483731321B3BEA5900AD5B5A /* ESPUDPSocketServer.h */,
+				483731331B3BEA5900AD5B5A /* ESPUDPSocketServer.m */,
+				483731341B3BEA5900AD5B5A /* IPAddress.c */,
+				483731351B3BEA5900AD5B5A /* IPAddress.h */,
+			);
+			path = esptouch;
+			sourceTree = "<group>";
+		};
+		48BDA3421AC3B4E8006A054D = {
+			isa = PBXGroup;
+			children = (
+				48BDA34E1AC3B4E8006A054D /* PandoSdk */,
+				48BDA34D1AC3B4E8006A054D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48BDA34D1AC3B4E8006A054D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48BDA34C1AC3B4E8006A054D /* PandoSdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48BDA34E1AC3B4E8006A054D /* PandoSdk */ = {
+			isa = PBXGroup;
+			children = (
+				48BDA3511AC3B4E8006A054D /* PandoSdk.h */,
+				487E0E4F1AC958EA0075BBF6 /* PandoSdk.m */,
+				48D9AF651B9C1E53002B2CB3 /* CHKeyChain */,
+				48D9AF611B9C0DE7002B2CB3 /* HttpClient */,
+				4837311B1B3BEA5900AD5B5A /* esptouch */,
+				48D9AF461B904DC6002B2CB3 /* PandoPayload */,
+				48EF765C1B429A4A009D39E4 /* GCDAsyncSocket */,
+				48E8468C1B7B2870000828FA /* MQTTKit */,
+				48BDA34F1AC3B4E8006A054D /* Supporting Files */,
+			);
+			path = PandoSdk;
+			sourceTree = "<group>";
+		};
+		48BDA34F1AC3B4E8006A054D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48BDA3501AC3B4E8006A054D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48D9AF461B904DC6002B2CB3 /* PandoPayload */ = {
+			isa = PBXGroup;
+			children = (
+				48D9AF481B904DC6002B2CB3 /* pando_endian.c */,
+				48D9AF491B904DC6002B2CB3 /* pando_endian.h */,
+				48D9AF4A1B904DC6002B2CB3 /* pando_protocol_tool.c */,
+				48D9AF4B1B904DC6002B2CB3 /* pando_protocol_tool.h */,
+				48D9AF4C1B904DC6002B2CB3 /* pd_machine.c */,
+				48D9AF4D1B904DC6002B2CB3 /* pd_machine.h */,
+				48D9AF4E1B904DC6002B2CB3 /* platform.c */,
+				48D9AF4F1B904DC6002B2CB3 /* platform.h */,
+				48D9AF501B904DC6002B2CB3 /* platform_functions.c */,
+				48D9AF511B904DC6002B2CB3 /* platform_functions.h */,
+				48D9AF521B904DC6002B2CB3 /* sub_device_protocol_tool.c */,
+				48D9AF531B904DC6002B2CB3 /* sub_device_protocol_tool.h */,
+			);
+			path = PandoPayload;
+			sourceTree = "<group>";
+		};
+		48D9AF611B9C0DE7002B2CB3 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				48D9AF641B9C109F002B2CB3 /* HttpClient.h */,
+				48D9AF621B9C0E7C002B2CB3 /* HttpClient.m */,
+			);
+			name = HttpClient;
+			sourceTree = "<group>";
+		};
+		48D9AF651B9C1E53002B2CB3 /* CHKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				48D9AF661B9C1E72002B2CB3 /* CHKeychain.h */,
+				48D9AF671B9C1E72002B2CB3 /* CHKeychain.m */,
+			);
+			name = CHKeyChain;
+			sourceTree = "<group>";
+		};
+		48E8468C1B7B2870000828FA /* MQTTKit */ = {
+			isa = PBXGroup;
+			children = (
+				48E8468D1B7B2870000828FA /* MQTTKit.h */,
+				48E8468E1B7B2870000828FA /* MQTTKit.m */,
+				48E846911B7B2881000828FA /* libmosquitto */,
+			);
+			path = MQTTKit;
+			sourceTree = "<group>";
+		};
+		48E846911B7B2881000828FA /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				48E846921B7B2881000828FA /* config.h */,
+				48E846931B7B2881000828FA /* dummypthread.h */,
+				48E846941B7B2881000828FA /* logging_mosq.c */,
+				48E846951B7B2881000828FA /* logging_mosq.h */,
+				48E846961B7B2881000828FA /* memory_mosq.c */,
+				48E846971B7B2881000828FA /* memory_mosq.h */,
+				48E846981B7B2881000828FA /* messages_mosq.c */,
+				48E846991B7B2881000828FA /* messages_mosq.h */,
+				48E8469A1B7B2881000828FA /* mosquitto.c */,
+				48E8469B1B7B2881000828FA /* mosquitto.h */,
+				48E8469C1B7B2881000828FA /* mosquitto_internal.h */,
+				48E8469D1B7B2881000828FA /* mqtt3_protocol.h */,
+				48E8469E1B7B2881000828FA /* net_mosq.c */,
+				48E8469F1B7B2881000828FA /* net_mosq.h */,
+				48E846A01B7B2881000828FA /* read_handle.c */,
+				48E846A11B7B2881000828FA /* read_handle.h */,
+				48E846A21B7B2881000828FA /* read_handle_client.c */,
+				48E846A31B7B2881000828FA /* read_handle_shared.c */,
+				48E846A41B7B2881000828FA /* send_client_mosq.c */,
+				48E846A51B7B2881000828FA /* send_mosq.c */,
+				48E846A61B7B2881000828FA /* send_mosq.h */,
+				48E846A71B7B2881000828FA /* thread_mosq.c */,
+				48E846A81B7B2881000828FA /* time_mosq.c */,
+				48E846A91B7B2881000828FA /* time_mosq.h */,
+				48E846AA1B7B2881000828FA /* tls_mosq.c */,
+				48E846AB1B7B2881000828FA /* tls_mosq.h */,
+				48E846AC1B7B2881000828FA /* util_mosq.c */,
+				48E846AD1B7B2881000828FA /* util_mosq.h */,
+				48E846AE1B7B2881000828FA /* will_mosq.c */,
+				48E846AF1B7B2881000828FA /* will_mosq.h */,
+			);
+			path = libmosquitto;
+			sourceTree = "<group>";
+		};
+		48EF765C1B429A4A009D39E4 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				489953B41B119DB500B5A5DA /* GCDAsyncSocket.h */,
+				489953B51B119DB500B5A5DA /* GCDAsyncSocket.m */,
+				489953B61B119DB500B5A5DA /* GCDAsyncUdpSocket.h */,
+				489953B71B119DB500B5A5DA /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48BDA3491AC3B4E8006A054D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4837314F1B3BEA5900AD5B5A /* IPAddress.h in Headers */,
+				48D9AF581B904DC6002B2CB3 /* pando_protocol_tool.h in Headers */,
+				48D9AF5A1B904DC6002B2CB3 /* pd_machine.h in Headers */,
+				48BDA3521AC3B4E8006A054D /* PandoSdk.h in Headers */,
+				48E846B01B7B2881000828FA /* config.h in Headers */,
+				48E846CB1B7B2881000828FA /* util_mosq.h in Headers */,
+				48E846BF1B7B2881000828FA /* read_handle.h in Headers */,
+				48E846BA1B7B2881000828FA /* mosquitto_internal.h in Headers */,
+				48D9AF561B904DC6002B2CB3 /* pando_endian.h in Headers */,
+				483731361B3BEA5900AD5B5A /* ESP_ByteUtil.h in Headers */,
+				483731461B3BEA5900AD5B5A /* ESPTouchTask.h in Headers */,
+				483731481B3BEA5900AD5B5A /* ESPTouchTaskParameter.h in Headers */,
+				48E846BB1B7B2881000828FA /* mqtt3_protocol.h in Headers */,
+				48E8468F1B7B2870000828FA /* MQTTKit.h in Headers */,
+				4837314C1B3BEA5900AD5B5A /* ESPUDPSocketServer.h in Headers */,
+				483731441B3BEA5900AD5B5A /* ESPTouchResult.h in Headers */,
+				48E846C71B7B2881000828FA /* time_mosq.h in Headers */,
+				4837313E1B3BEA5900AD5B5A /* ESPDatumCode.h in Headers */,
+				48E846B91B7B2881000828FA /* mosquitto.h in Headers */,
+				48E846B71B7B2881000828FA /* messages_mosq.h in Headers */,
+				4837313C1B3BEA5900AD5B5A /* ESPDataCode.h in Headers */,
+				4837314A1B3BEA5900AD5B5A /* ESPUDPSocketClient.h in Headers */,
+				483731381B3BEA5900AD5B5A /* ESP_CRC8.h in Headers */,
+				4837313A1B3BEA5900AD5B5A /* ESP_NetUtil.h in Headers */,
+				489953BA1B119DB500B5A5DA /* GCDAsyncUdpSocket.h in Headers */,
+				48E846B11B7B2881000828FA /* dummypthread.h in Headers */,
+				483731401B3BEA5900AD5B5A /* ESPGuideCode.h in Headers */,
+				48D9AF601B904DC6002B2CB3 /* sub_device_protocol_tool.h in Headers */,
+				48E846CD1B7B2881000828FA /* will_mosq.h in Headers */,
+				48D9AF5E1B904DC6002B2CB3 /* platform_functions.h in Headers */,
+				48D9AF681B9C1E72002B2CB3 /* CHKeychain.h in Headers */,
+				48E846C41B7B2881000828FA /* send_mosq.h in Headers */,
+				48E846C91B7B2881000828FA /* tls_mosq.h in Headers */,
+				489953B81B119DB500B5A5DA /* GCDAsyncSocket.h in Headers */,
+				48E846B31B7B2881000828FA /* logging_mosq.h in Headers */,
+				483731421B3BEA5900AD5B5A /* ESPTouchGenerator.h in Headers */,
+				48D9AF5C1B904DC6002B2CB3 /* platform.h in Headers */,
+				48E846BD1B7B2881000828FA /* net_mosq.h in Headers */,
+				48E846B51B7B2881000828FA /* memory_mosq.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48BDA34B1AC3B4E8006A054D /* PandoSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48BDA3621AC3B4E8006A054D /* Build configuration list for PBXNativeTarget "PandoSdk" */;
+			buildPhases = (
+				48BDA3471AC3B4E8006A054D /* Sources */,
+				48BDA3481AC3B4E8006A054D /* Frameworks */,
+				48BDA3491AC3B4E8006A054D /* Headers */,
+				48BDA34A1AC3B4E8006A054D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandoSdk;
+			productName = PandoSdk;
+			productReference = 48BDA34C1AC3B4E8006A054D /* PandoSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48BDA3431AC3B4E8006A054D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = liming_llm;
+				TargetAttributes = {
+					489953BC1B11D1FC00B5A5DA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					48BDA34B1AC3B4E8006A054D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 48BDA3461AC3B4E8006A054D /* Build configuration list for PBXProject "PandoSdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48BDA3421AC3B4E8006A054D;
+			productRefGroup = 48BDA34D1AC3B4E8006A054D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48BDA34B1AC3B4E8006A054D /* PandoSdk */,
+				489953BC1B11D1FC00B5A5DA /* framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48BDA34A1AC3B4E8006A054D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		489953C21B11D27300B5A5DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\nINSTALL_SIM_DIR=${SRCROOT}/Products/${FMK_NAME}_simulator.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nif [ -d \"${INSTALL_SIM_DIR}\" ]\nthen\nrm -rf \"${INSTALL_SIM_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_SIM_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\ncp -R \"${SIMULATOR_DIR}/\" \"${INSTALL_SIM_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n#lipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\ncp \"${INSTALL_SIM_DIR}/${FMK_NAME}\" \"${INSTALL_SIM_DIR}/${FMK_NAME}_simulator\"\nrm -rf \"${INSTALL_SIM_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48BDA3471AC3B4E8006A054D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E846C21B7B2881000828FA /* send_client_mosq.c in Sources */,
+				48E846B41B7B2881000828FA /* memory_mosq.c in Sources */,
+				4837313B1B3BEA5900AD5B5A /* ESP_NetUtil.m in Sources */,
+				489953B91B119DB500B5A5DA /* GCDAsyncSocket.m in Sources */,
+				48E846C61B7B2881000828FA /* time_mosq.c in Sources */,
+				489953BB1B119DB500B5A5DA /* GCDAsyncUdpSocket.m in Sources */,
+				48D9AF691B9C1E72002B2CB3 /* CHKeychain.m in Sources */,
+				48D9AF5D1B904DC6002B2CB3 /* platform_functions.c in Sources */,
+				48D9AF571B904DC6002B2CB3 /* pando_protocol_tool.c in Sources */,
+				48E846B21B7B2881000828FA /* logging_mosq.c in Sources */,
+				48E846901B7B2870000828FA /* MQTTKit.m in Sources */,
+				483731471B3BEA5900AD5B5A /* ESPTouchTask.m in Sources */,
+				4837314B1B3BEA5900AD5B5A /* ESPUDPSocketClient.m in Sources */,
+				48E846C51B7B2881000828FA /* thread_mosq.c in Sources */,
+				483731491B3BEA5900AD5B5A /* ESPTouchTaskParameter.m in Sources */,
+				4837313D1B3BEA5900AD5B5A /* ESPDataCode.m in Sources */,
+				48E846C01B7B2881000828FA /* read_handle_client.c in Sources */,
+				483731431B3BEA5900AD5B5A /* ESPTouchGenerator.m in Sources */,
+				48E846B61B7B2881000828FA /* messages_mosq.c in Sources */,
+				48E846C31B7B2881000828FA /* send_mosq.c in Sources */,
+				483731391B3BEA5900AD5B5A /* ESP_CRC8.m in Sources */,
+				483731411B3BEA5900AD5B5A /* ESPGuideCode.m in Sources */,
+				48D9AF5B1B904DC6002B2CB3 /* platform.c in Sources */,
+				48E846CC1B7B2881000828FA /* will_mosq.c in Sources */,
+				48D9AF551B904DC6002B2CB3 /* pando_endian.c in Sources */,
+				48D9AF631B9C0E7C002B2CB3 /* HttpClient.m in Sources */,
+				48E846CA1B7B2881000828FA /* util_mosq.c in Sources */,
+				48E846BE1B7B2881000828FA /* read_handle.c in Sources */,
+				483731371B3BEA5900AD5B5A /* ESP_ByteUtil.m in Sources */,
+				4837314E1B3BEA5900AD5B5A /* IPAddress.c in Sources */,
+				483731451B3BEA5900AD5B5A /* ESPTouchResult.m in Sources */,
+				48D9AF591B904DC6002B2CB3 /* pd_machine.c in Sources */,
+				487E0E501AC958EA0075BBF6 /* PandoSdk.m in Sources */,
+				48E846B81B7B2881000828FA /* mosquitto.c in Sources */,
+				48E846BC1B7B2881000828FA /* net_mosq.c in Sources */,
+				4837313F1B3BEA5900AD5B5A /* ESPDatumCode.m in Sources */,
+				48D9AF5F1B904DC6002B2CB3 /* sub_device_protocol_tool.c in Sources */,
+				4837314D1B3BEA5900AD5B5A /* ESPUDPSocketServer.m in Sources */,
+				48E846C11B7B2881000828FA /* read_handle_shared.c in Sources */,
+				48E846C81B7B2881000828FA /* tls_mosq.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		489953C11B11D21300B5A5DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48BDA34B1AC3B4E8006A054D /* PandoSdk */;
+			targetProxy = 489953C01B11D21300B5A5DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		489953BE1B11D1FC00B5A5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		489953BF1B11D1FC00B5A5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		48BDA3601AC3B4E8006A054D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48BDA3611AC3B4E8006A054D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48BDA3631AC3B4E8006A054D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PandoSdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48BDA3641AC3B4E8006A054D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PandoSdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		489953BD1B11D1FC00B5A5DA /* Build configuration list for PBXAggregateTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489953BE1B11D1FC00B5A5DA /* Debug */,
+				489953BF1B11D1FC00B5A5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48BDA3461AC3B4E8006A054D /* Build configuration list for PBXProject "PandoSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BDA3601AC3B4E8006A054D /* Debug */,
+				48BDA3611AC3B4E8006A054D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48BDA3621AC3B4E8006A054D /* Build configuration list for PBXNativeTarget "PandoSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BDA3631AC3B4E8006A054D /* Debug */,
+				48BDA3641AC3B4E8006A054D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48BDA3431AC3B4E8006A054D /* Project object */;
+}
